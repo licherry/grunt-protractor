@@ -23,6 +23,7 @@ exports.config = {
   chromeDriver: './tools/chromedriver_mac32/chromedriver',
   directConnect: true,
   specs: ['*.spec.js'],
+
   ...
   }
 
