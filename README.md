@@ -1,10 +1,10 @@
 # grunt-protractor
 
-##generate a package.json file
+## generate a package.json file
 
 `npm init`
 
-##Install Protractor
+## Install Protractor
 ```
 npm install -g protractor
 
@@ -13,7 +13,7 @@ webdriver-manager update
 npm install --save-dev protractor (write into package.json)
 ```
 
-####Config protractor.config.js file
+#### Config protractor.config.js file
 
 + connect browser directly
 ```js
@@ -28,15 +28,15 @@ exports.config = {
   }
 
 ```
-##Install grunt
+## Install grunt
 
 `npm install --save-dev grunt`
 
-##Install grunt-protractor
+## Install grunt-protractor
 
 `npm install --save-dev grunt-protractor-runner`
 
-##Install other plugins
+## Install other plugins
 
 + make console report pretty
 `npm install --save-dev jasmine-spec-reporter`
@@ -44,4 +44,4 @@ exports.config = {
 + validate files with JSHint
 `npm install --save-dev grunt-contrib-jshint`
 
-##Please keep available version for protractor, node and grunt
+## Please keep available version for protractor, node and grunt
