@@ -11,8 +11,8 @@ timeStamp = years + '-' + months + '-' + dates + ' ' + hours + ':' + minutes + '
 
 exports.config = {
     framework: 'jasmine2',
-    seleniumServerJar: './tools/selenium-server-standalone-2.48.2.jar',
-    chromeDriver: './tools/chromedriver_mac32/chromedriver',
+    seleniumServerJar: './tools/selenium-server-standalone-3.5.1.jar',
+    chromeDriver: './tools/chromedriver_mac32/chromedriver_2.31',
     directConnect: true,
     specs: ['*.spec.js'],
 

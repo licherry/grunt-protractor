@@ -43,3 +43,5 @@ exports.config = {
 
 + validate files with JSHint
 `npm install --save-dev grunt-contrib-jshint`
+
+##Please keep available version for protractor, node and grunt
