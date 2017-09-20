@@ -21,12 +21,11 @@ exports.config = {
         jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
         jasmine.getEnv().addReporter(
             new Jasmine2HtmlReporter({
-                    //在report后面添加时间戳,截图无法展示
-                    // savePath: './results/reports_' + timeStamp,
-                    // filePrefix: 'result_' + timeStamp
-                    //默认配置,可以展示截图,默认截图文件名为screenshots
-                    savePath: './test_result/reports/'
-                    // screenshotsFolder: 'images'
+                    savePath: './test_result/reports/',
+                    filePrefix: 'my-test_' + timeStamp,
+                    screenshotsFolder: 'images_' + timeStamp,
+                    takeScreenshotsOnlyOnFailures: true,
+                    showPassed: false
                 }
             ));
     },
