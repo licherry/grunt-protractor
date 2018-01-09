@@ -12,7 +12,7 @@ timeStamp = years + '-' + months + '-' + dates + ' ' + hours + ':' + minutes + '
 exports.config = {
     framework: 'jasmine2',
     seleniumServerJar: './tools/selenium-server-standalone-3.5.1.jar',
-    chromeDriver: './tools/chromedriver_mac32/chromedriver_2.31',
+    chromeDriver: './tools/chromedriver_2.34/chromedriver',
     directConnect: true,
     specs: ['*.spec.js'],
 
@@ -33,7 +33,10 @@ exports.config = {
     baseUrl: 'http://juliemr.github.io',
 
     capabilities: {
-        'browserName': 'chrome'
+        'browserName': 'chrome',
+        'chromeOptions': {
+            args: [ "--headless" ]
+        }
     },
 
     allScriptsTimeout: 30000,
